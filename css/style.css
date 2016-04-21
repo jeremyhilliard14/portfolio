@@ -1,3 +1,19 @@
 .thumbnails{
 	margin: 10px;
 }
+
+#myGrub{
+	background-image: url('photos/screenShot12.png');
+	background-image: cover;
+	color: white;
+}
+
+#html5, #css3{
+	position: relative;
+	float: left;
+	height: 200px;
+	margin-right: 50px;
+}
+#html5{
+	margin-left: 250px;
+}
