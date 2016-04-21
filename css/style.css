@@ -8,12 +8,17 @@
 	color: white;
 }
 
-#html5, #css3{
+/*#html5, #css3, #bootstrap{
 	position: relative;
 	float: left;
-	height: 200px;
+	max-height: 200px;
+	max-width: 95%;
 	margin-right: 50px;
 }
-#html5{
-	margin-left: 250px;
+#html5 img, #css3 img, #bootstrap img{
+	margin: 0 auto;
 }
+
+.caption{
+	clear: both;
+}*/
