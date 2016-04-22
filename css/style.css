@@ -1,3 +1,14 @@
+#welcome{
+	background-color: white;
+	opacity: 0.75;
+	font-weight: bold;
+	/*color: white;*/
+	margin-bottom: 50px;
+	min-height: 300px;
+	/*background-size: 100% 100%;*/
+	border-radius: 5px;
+}
+
 .thumbnails{
 	margin: 10px;
 }
@@ -28,7 +39,7 @@
 	background-size: 100% 100%;
 	color: white;
 }
-#html5, #css3, #bootstrap, #jquery, #angular, #js, #node, #express, #mongo{
+#html5, #css3, #bootstrap, #jquery, #angular, #js, #node, #express, #mongo, #github, #sass, #lss{
 	position: relative;
 	max-height: 200px;
 	max-width: 90%;
@@ -54,11 +65,19 @@
 }
 
 #carousel-title{
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: bold;
+}
+
+#project-container{
+	margin-top: 50px;
 }
 
 .projects{
 	
 	height: 300px;
+}
+
+#jgh img{
+	border-radius: 10px;
 }
