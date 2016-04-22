@@ -16,6 +16,7 @@
 	overflow: hidden;
 	background-image: url('photos/ScreenShot12.png');
 	background-size: 100% 100%;
+	margin-bottom: 15px;
 }
 
 #myGrub img {
@@ -68,6 +69,7 @@
 	overflow: hidden;
 	background-image: url('photos/interactive-map.png');
 	background-size: 100% 100%;
+	margin-bottom: 15px;
 }
 
 #interactive-map img {
@@ -95,6 +97,7 @@
 	overflow: hidden;
 	background-image: url('photos/memory-game.png');
 	background-size: 100% 100%;
+	margin-bottom: 15px;
 }
 
 #memory-game img {
@@ -122,6 +125,7 @@
 	overflow: hidden;
 	background-image: url('photos/google-maps.png');
 	background-size: 100% 100%;
+	margin-bottom: 15px;
 }
 
 #google-maps img {
@@ -150,6 +154,7 @@
 	background-image: url('photos/countdown.png');
 	background-size: 100% 100%;
 	color: white;
+	margin-bottom: 15px;
 }
 
 #countdown img {
@@ -177,6 +182,7 @@
 	overflow: hidden;
 	background-image: url('photos/ScreenShot12.png');
 	background-size: 100% 100%;
+	margin-bottom: 15px;
 }
 
 #myVote img {
@@ -239,6 +245,10 @@
 
 #jgh img{
 	border-radius: 10px;
+}
+
+#comment-container{
+	margin-top: 50px;
 }
 
 #contact-form{
