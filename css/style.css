@@ -81,3 +81,12 @@
 #jgh img{
 	border-radius: 10px;
 }
+
+#contact-form{
+	background-color: white;
+	opacity: 0.75;
+}
+
+#write-here{
+	width: 100%;
+}
