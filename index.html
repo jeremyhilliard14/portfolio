@@ -163,13 +163,14 @@
 
 		<div id="project-container" class="container fluid">
 			<div id="projects" class="col-sm-12">
-				<div class="row">
-					<div id="myGrub" class="col-sm-4 projects thumbnail">
-						<div class="col-sm-12 app-info">
-							<h2>MyGrub</h2>
-							<p>Recipe app that returns recipes based on user inventory, favorites, and search inputs.</p>
-						</div>
-					</div>
+				<div class="row cs-style-3">
+					<figure id="myGrub" class="col-sm-4 projects thumbnail">
+						<img src="css/photos/screenShot12.png">
+						<figcaption id="myGrub-info" class="col-sm-12 app-info text-center">
+								<a href="#"><h3>MyGrub</h3></a>
+								<span>Front End Project using HTML5, CSS3, JavaScript, Jquery, and Angular. </span>
+						</figcaption>
+					</figure>
 
 					<div id="interactive-map" class="col-sm-4 projects thumbnail">
 						<div class="col-sm-12 app-info">
@@ -260,7 +261,7 @@
 
 
 	<script type="text/javascript">
-		
+	
 		$.backstretch("css/photos/grindelwald.jpg");
 
 		$(function() {
@@ -272,6 +273,11 @@
 		        event.preventDefault();
 		    });
 		});
+
+		function addInfo(){
+			document.getElementById('myGrub-info').innerHTML = '<h2>MyGrub</h2><p>Recipe app that returns recipes based on user inventory, favorites, and search inputs.</p>';
+		};
+
 
 	</script>
 </body>
