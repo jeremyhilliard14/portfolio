@@ -10,39 +10,37 @@
 	border-radius: 5px;
 }
 
-.thumbnails{
-	margin: 10px;
-}
-
-figure {
+#myGrub {
 	margin: 0;
 	position: relative;
 	overflow: hidden;
+	background-image: url('photos/ScreenShot12.png');
+	background-size: 100% 100%;
 }
 
-figure img {
+#myGrub img {
 	max-width: 100%;
 	display: block;
 	position: relative;
 	transition: transform 0.4s;
 }
 
-.cs-style-3 figure:hover img,
-.cs-style-3 figure.cs-hover img {
-	transform: translateY(-50px);
+.cs-style-3 #myGrub:hover img,
+.cs-style-3 #myGrub.cs-hover img {
+	transform: translateY(-40px);
 }
 
-.cs-style-3 figcaption {
+.cs-style-3 .app-info {
 	height: 200px;
 	width: 100%;
 	top: auto;
 	bottom: 0;
 	opacity: 0;
-	transform: translateY(150%);
+	transform: translateY(100%);
 	transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-figcaption {
+.app-info {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -51,54 +49,155 @@ figcaption {
 	color: #ed4e6e;
 }
 
-.cs-style-3 figure:hover figcaption,
-.cs-style-3 figure.cs-hover figcaption {
+.cs-style-3 #myGrub:hover .app-info,
+.cs-style-3 #myGrub.cs-hover .app-info {
 	opacity: 1;
-	transform: translateY(-40px);
+	transform: translateY(0px);
 	transition: transform 0.4s, opacity 0.1s;
 }
 
-figcaption h3 {
+.app-info h3 {
 	margin: 0;
 	padding: 0;
 	color: #fff;
 }
 
-/*figcaption a {
-	text-align: center;
-	padding: 5px 10px;
-	border-radius: 2px;
-	display: inline-block;
-	background: #ed4e6e;
-	color: #fff;
-}*/
-
-/*.cs-style-3 figcaption a {
-	position: absolute;
-	bottom: 10px;
-	right: 20px;
-}*/
-
 #interactive-map{
+	margin: 0;
+	position: relative;
+	overflow: hidden;
 	background-image: url('photos/interactive-map.png');
 	background-size: 100% 100%;
 }
 
+#interactive-map img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+	transition: transform 0.4s;
+}
+
+.cs-style-3 #interactive-map:hover img,
+.cs-style-3 #interactive-map.cs-hover img {
+	transform: translateY(-40px);
+}
+
+.cs-style-3 #interactive-map:hover .app-info,
+.cs-style-3 #interactive-map.cs-hover .app-info {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: transform 0.4s, opacity 0.1s;
+}
+
 #memory-game{
+	margin: 0;
+	position: relative;
+	overflow: hidden;
 	background-image: url('photos/memory-game.png');
 	background-size: 100% 100%;
 }
 
+#memory-game img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+	transition: transform 0.4s;
+}
+
+.cs-style-3 #memory-game:hover img,
+.cs-style-3 #memory-game.cs-hover img {
+	transform: translateY(-40px);
+}
+
+.cs-style-3 #memory-game:hover .app-info,
+.cs-style-3 #memory-game.cs-hover .app-info {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: transform 0.4s, opacity 0.1s;
+}
+
 #google-maps{
+	margin: 0;
+	position: relative;
+	overflow: hidden;
 	background-image: url('photos/google-maps.png');
 	background-size: 100% 100%;
 }
 
+#google-maps img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+	transition: transform 0.4s;
+}
+
+.cs-style-3 #google-maps:hover img,
+.cs-style-3 #google-maps.cs-hover img {
+	transform: translateY(-40px);
+}
+
+.cs-style-3 #google-maps:hover .app-info,
+.cs-style-3 #google-maps.cs-hover .app-info {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: transform 0.4s, opacity 0.1s;
+}
+
 #countdown{
+	margin: 0;
+	position: relative;
+	overflow: hidden;
 	background-image: url('photos/countdown.png');
 	background-size: 100% 100%;
 	color: white;
 }
+
+#countdown img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+	transition: transform 0.4s;
+}
+
+.cs-style-3 #countdown:hover img,
+.cs-style-3 #countdown.cs-hover img {
+	transform: translateY(-40px);
+}
+
+.cs-style-3 #countdown:hover .app-info,
+.cs-style-3 #countdown.cs-hover .app-info {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+#myVote{
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	background-image: url('photos/ScreenShot12.png');
+	background-size: 100% 100%;
+}
+
+#myVote img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+	transition: transform 0.4s;
+}
+
+.cs-style-3 #myVote:hover img,
+.cs-style-3 #myVote.cs-hover img {
+	transform: translateY(-40px);
+}
+
+.cs-style-3 #myVote:hover .app-info,
+.cs-style-3 #myVote.cs-hover .app-info {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: transform 0.4s, opacity 0.1s;
+}
+
 #html5, #css3, #bootstrap, #jquery, #angular, #js, #node, #express, #mongo, #github, #sass, #lss{
 	position: relative;
 	max-height: 200px;
