@@ -90,3 +90,18 @@
 #write-here{
 	width: 100%;
 }
+
+#footer{
+	background-color: white;
+	opacity: 0.75;
+	margin-top: 25px;
+	height: 50px;
+}
+
+#linkedin, #github-logo, #fb-logo{
+	margin-top: 10px;
+}
+
+#left p, #center p{
+	margin-top: 10px;
+}
