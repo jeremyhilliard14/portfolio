@@ -4,12 +4,12 @@
 	<title>Jeremy Hilliard's Portfolio</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link type="text/css" rel="stylesheet" href="css/lightslider.css" /> 
 	<link rel="stylesheet" type="text/css" href="css/style.css">	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script src="plugins/jquery.backstretch.min.js"></script>
-	<script src="js/lightslider.js"></script>
+	<script src="node_modules/lightslider/src/js/lightslider.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
 
 
 
@@ -59,93 +59,70 @@
 		    </div><!-- /.navbar-collapse -->
 		  </div><!-- /.container-fluid -->
 		</nav>
+		<div class="container">
+			<div id="carousel-title" class="col-sm-12 text-center">Skills</div>
+			    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+			        <!-- Indicators -->
+			        <ol class="carousel-indicators">
+			            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			            <li data-target="#myCarousel" data-slide-to="1"></li>
+			            <li data-target="#myCarousel" data-slide-to="2"></li>
+			            <li data-target="#myCarousel" data-slide-to="3"></li>
+			        </ol>
 
-		<!-- <div id="carousel-example-generic" class="carousel slide .hidden-sm" data-ride="carousel">
-		  <!- Indicators -->
-		  <!-- <ol class="carousel-indicators">
-		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-		  </ol> -->
-		 
-		   <div class="demo hasActive">
-                            <ul id="responsive" class="gallery content-slider list-unstyled clearfix cS-hidden">
-                                <li>
-                                    <img id ="html5" class="img-responsive" src="css/photos/HTML5_Logo.svg">
-                                </li>
-                                <li>
-                                    <img id ="css3" class="img-responsive" src="css/photos/css3.svg">
-                                </li>
-                                <li>
-                                    <img id ="bootstrap" class="img-responsive" src="css/photos/Boostrap_logo.svg">
-                                </li>
-                                <li>
-                                    <h3>4</h3>
-                                </li>
-                                <li>
-                                    <h3>5</h3>
-                                </li>
-                                <li>
-                                    <h3>6</h3>
-                                </li>
-                                <li>
-                                    <h3>7</h3>
-                                </li>
-                                <li>
-                                    <h3>8</h3>
-                                </li>
-                                <li>
-                                    <h3>9</h3>
-                                </li>
-                                <li>
-                                    <h3>10</h3>
-                                </li>
-                            </ul>
-                        </div>
-
-
-
-
-
-		  <!-- Wrapper for slides -->
-		  <!-- <div class="carousel-inner .hidden-sm">
-		    <div class="item active col-sm-12 center-block">
-		    	<div class="col-sm-4 center-block">
-		    		<img id ="html5" class="img-responsive" src="css/photos/HTML5_Logo.svg">
-		    	</div>
-		    	<div class="col-sm-4 center-block">
-		    		<img id ="css3" class="img-responsive" src="css/photos/css3.svg">
-		    	</div>
-		    	<div class="col-sm-4 center-block">
-		    		<img id ="bootstrap" class="img-responsive" src="css/photos/Boostrap_logo.svg">
-		    	</div>
-		    	<div class="carousel-caption caption">
-		      		<h3>HTML5, CSS3, Bootstrap</h3>
-		      	</div>
-		    </div>
-		    <div class="item">
-		      <img src="http://placehold.it/1200x315" alt="...">
-		      <div class="carousel-caption">
-		      	<h3>Caption Text</h3>
-		      </div>
-		    </div>
-		    <div class="item">
-		      <img src="http://placehold.it/1200x315" alt="...">
-		      <div class="carousel-caption">
-		      	<h3>Caption Text</h3>
-		      </div>
-		    </div>
-		  </div>
-		 
-		  <!- Controls -->
-		  <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left"></span>
-		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right"></span>
-		  </a>
-		</div>  -->
-		<!-- Carousel -->
+			        <!-- Wrapper for slides -->
+			        <div class="carousel-inner" role="listbox">
+			            <div class="item active">
+			                <div id="logo1" class="col-sm-12 span4" style="padding-left: 18px;">
+			                	<div class="col-sm-4 logos">
+			                    	<img id="html5" class="img-responsive" src="css/photos/HTML5_Logo.svg">
+			                    </div>
+			                    <div class="col-sm-4 logos">
+			                    	<img id="css3" class="img-responsive" src="css/photos/css3.svg">
+			                    </div>
+			                    <div class="col-sm-4 logos">
+			                    	<img id="bootstrap" class="img-responsive" src="css/photos/Boostrap_logo.svg">
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="item">
+			                 <div id="logo2" class="col-sm-12 span4" style="padding-left: 18px;">
+			                     <div class="col-sm-4 logos">
+			                    	<img id="js" class="img-responsive" src="css/photos/icon-javascript.png">
+			                    </div>
+			                     <div class="col-sm-4 logos">
+			                    	<img id="jquery" class="img-responsive" src="css/photos/jquery.jpg">
+			                    </div>
+			                     <div class="col-sm-4 logos">
+			                    	<img id="angular" class="img-responsive" src="css/photos/AngularJS.png">
+			                    </div>
+			                </div>
+			            </div>
+			            <div class="item">
+			                 <div id="logo3" class="col-sm-12 span4" style="padding-left: 18px;">
+			                     <div class="col-sm-4 logos">
+			                    	<img id="node" class="img-responsive" src="css/photos/nodejs.png">
+			                    </div>
+			                     <div class="col-sm-4 logos">
+			                    	<img id="express" class="img-responsive" src="css/photos/express.png">
+			                    </div>
+			                     <div class="col-sm-4 logos">
+			                    	<img id="mongo" class="img-responsive" src="css/photos/mongodb.svg">
+			                    </div>
+			                </div>
+			            </div>
+			        </div>
+			        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					    <span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					    <span class="sr-only">Next</span>
+					</a>
+			    </div>
+			</div>
+		</div>
 
 
 
@@ -180,29 +157,46 @@
 		<div class="container fluid">
 			<div id="projects" class="col-sm-12">
 				<div class="row">
-					<div id="myGrub" class="col-sm-4 thumbnail">
+					<div id="myGrub" class="col-sm-4 projects thumbnail">
 						<div class="col-sm-12 app-info">
 							<h2>MyGrub</h2>
 							<p>Recipe app that returns recipes based on user inventory, favorites, and search inputs.</p>
 						</div>
 					</div>
-					<div id="interactive-map" class="col-sm-4 thumbnail">
-						<img src="css/photos/screenShot12.png">
+
+					<div id="interactive-map" class="col-sm-4 projects thumbnail">
+						<div class="col-sm-12 app-info">
+							<h2>Interactive Map</h2>
+								<p>App that shows the delegate count by state allowing you to click on the state to update the total count.</p>
+						</div>
 					</div>
-					<div id="tic-tac-toe" class="col-sm-4 thumbnail">
-						<img src="css/photos/screenShot12.png">
+					
+					<div id="memory-game" class="col-sm-4 projects thumbnail">
+						<div class="col-sm-12 app-info">
+							<h2>Memory Game</h2>
+								<p>App built using javascrip and css animations.</p>
+						</div>
 					</div>
 				</div>
 
 				<div class="row">
-					<div id="google-maps" class="col-sm-4 thumbnail">
-						<img src="css/photos/screenShot12.png">
+					<div id="google-maps" class="col-sm-4 projects thumbnail">
+						<div class="col-sm-12 app-info">
+							<h2>Google Maps</h2>
+								<p>App built using Google API.</p>
+						</div>
 					</div>
-					<div id="countdown" class="col-sm-4 thumbnail">
-						<img src="css/photos/screenShot12.png">
+					<div id="countdown" class="col-sm-4 projects thumbnail">
+						<div class="col-sm-12 app-info">
+							<h2>Countdown</h2>
+								<p>App built using javascrip showing countdown until the Tennessee/Virginia Tech football game.</p>
+						</div>
 					</div>
-					<div id="myGrub" class="col-sm-4 thumbnail">
-						<img src="css/photos/screenShot12.png">
+					<div id="myGrub" class="col-sm-4 projects thumbnail">
+						<div class="col-sm-12 app-info">
+							<h2>Memory Game</h2>
+								<p>App built using javascrip and css animations.</p>
+						</div>
 					</div>
 				</div>
 
@@ -214,32 +208,36 @@
 		
 		$.backstretch("css/photos/grindelwald.jpg");
 
-		 $(document).ready(function() {
-		    $('#responsive').lightSlider({
-		        item:4,
-		        loop:false,
-		        slideMove:2,
-		        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-		        speed:600,
-		        responsive : [
-		            {
-		                breakpoint:800,
-		                settings: {
-		                    item:3,
-		                    slideMove:1,
-		                    slideMargin:6,
-		                  }
-		            },
-		            {
-		                breakpoint:480,
-		                settings: {
-		                    item:2,
-		                    slideMove:1
-		                  }
-		            }
-		        ]
-		    });  
-  });
+		
+
+		 // $(document).ready(function() {
+		 //    $('#responsive').lightSlider({
+		 //        item:4,
+		 //        loop:false,
+		 //        slideMove:2,
+		 //        easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
+		 //        speed:600,
+		 //        responsive : [
+		 //            {
+		 //                breakpoint:800,
+		 //                settings: {
+		 //                    item:3,
+		 //                    slideMove:1,
+		 //                    slideMargin:6,
+		 //                  }
+		 //            },
+		 //            {
+		 //                breakpoint:480,
+		 //                settings: {
+		 //                    item:2,
+		 //                    slideMove:1
+		 //                  }
+		 //            }
+		 //        ]
+		 //    });  
+  	// 	});
+
+
 
 	</script>
 </body>

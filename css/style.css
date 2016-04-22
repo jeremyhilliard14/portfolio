@@ -4,21 +4,61 @@
 
 #myGrub{
 	background-image: url('photos/screenShot12.png');
-	background-image: cover;
+	background-size: 100% 100%;
 	color: white;
 }
 
-/*#html5, #css3, #bootstrap{
-	position: relative;
-	float: left;
-	max-height: 200px;
-	max-width: 95%;
-	margin-right: 50px;
+#interactive-map{
+	background-image: url('photos/interactive-map.png');
+	background-size: 100% 100%;
 }
-#html5 img, #css3 img, #bootstrap img{
+
+#memory-game{
+	background-image: url('photos/memory-game.png');
+	background-size: 100% 100%;
+}
+
+#google-maps{
+	background-image: url('photos/google-maps.png');
+	background-size: 100% 100%;
+}
+
+#countdown{
+	background-image: url('photos/countdown.png');
+	background-size: 100% 100%;
+	color: white;
+}
+#html5, #css3, #bootstrap, #jquery, #angular, #js, #node, #express, #mongo{
+	position: relative;
+	max-height: 200px;
+	max-width: 90%;
+	/*margin-right: 50px;
+	margin-left: 50px;*/
+}
+
+.logos .img-responsive{
 	margin: 0 auto;
 }
 
-.caption{
-	clear: both;
-}*/
+#css3{
+	margin-left: 95px;
+}
+
+#bootstrap{
+	max-height: 150px;
+	margin-top: 25px;
+}
+
+#express, #mongo{
+	margin-top: 30px;
+}
+
+#carousel-title{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.projects{
+	
+	height: 300px;
+}
