@@ -1,3 +1,10 @@
+body{
+	background-color: #111d23
+}
+#navbar{
+	background-color: #333333
+}
+
 #welcome{
 	background-color: white;
 	opacity: 0.75;
@@ -244,12 +251,21 @@
 }
 
 #comment-container{
-	margin-top: 50px;
+	margin-top: 150px;
 }
 
 #contact-form{
 	background-color: white;
 	opacity: 0.75;
+	border-radius: 5px;
+}
+
+.form-group{
+	margin-top: 25px;
+}
+
+#comments-area{
+	margin-top: 25px;
 }
 
 #write-here{
@@ -263,9 +279,9 @@
 	height: 50px;
 }
 
-#linkedin, #github-logo, #fb-logo{
-	margin-top: 10px;
-	height: 34px;
+#link-logo, #github-logo, #fb-logo{
+	margin: 20px;
+	height: 40px;
 }
 
 #left p, #center p{
