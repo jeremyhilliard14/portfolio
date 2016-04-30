@@ -46,4 +46,28 @@ portfolio.config(function($routeProvider) {
 			return '/projects/interactiveMap/index.html'
 		}
 	});
+
+	$routeProvider.when('/projects/memoryGame', {
+		controller: 'portfolioController',
+		templateUrl: function($routeParams) {
+			console.log('routing to memoryGame');
+			return '/projects/memoryGame/index.html'
+		}
+	});
+
+	$routeProvider.when('/project/googleMaps', {
+		controller: 'portfolioController',
+		templateUrl: function($routeParams) {
+			console.log('routing to googleMaps');
+			return '/projects/googleMaps/'
+		}
+	});
+
+	$routeProvider.when('/contact', {
+		controller: 'contactController',
+		templateUrl: function($routeProvider) {
+			console.log('routing to contact form');
+			return '/pages/contactForm'
+		}
+	});
 })
