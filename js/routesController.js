@@ -1,9 +1,9 @@
-portfolio.config(function($routeProvider) {
+portfolioApp.config(function($routeProvider) {
 	$routeProvider.when('/', {
 		controller: 'portfolioController',
 		templateUrl: function($routeParams) {
 			console.log('routing to home');
-			return '/pages/homeView/html';
+			return 'pages/homeView/html';
 		}
 	});
 
@@ -11,7 +11,7 @@ portfolio.config(function($routeProvider) {
 		controller: 'portfolioController',
 		templateUrl: function($routeParams) {
 			console.log('routing to skills page');
-			return '/pages/skillsView';
+			return 'pages/skillsView';
 		}
 	});
 
@@ -19,7 +19,7 @@ portfolio.config(function($routeProvider) {
 		controller: 'portfolioController',
 		templateUrl: function($routeParams) {
 			console.log('routing to porjecs page');
-			return '/pages/projectsView';
+			return 'pages/projectsView';
 		}
 	});
 
@@ -27,7 +27,7 @@ portfolio.config(function($routeProvider) {
 		controller: 'portfolioController', 
 		templateUrl: function($routeParams) {
 			console.log('routing to mygrub');
-			return '/projects/myGrub/index.html'
+			return 'projects/myGrub/index.html'
 		}
 	});
 
@@ -35,7 +35,7 @@ portfolio.config(function($routeProvider) {
 		controller: 'portfolioController',
 		templateUrl: function($routeParams) {
 			console.log('routing to countdown');
-			return '/projects/countdown/index.html'
+			return 'projects/countdown/index.html'
 		}
 	});
 
@@ -43,7 +43,7 @@ portfolio.config(function($routeProvider) {
 		controller: 'portfolioController',
 		templateUrl: function($routeParams) {
 			console.log('routing to interactiveMap');
-			return '/projects/interactiveMap/index.html'
+			return 'projects/interactiveMap/index.html'
 		}
 	});
 
@@ -51,7 +51,7 @@ portfolio.config(function($routeProvider) {
 		controller: 'portfolioController',
 		templateUrl: function($routeParams) {
 			console.log('routing to memoryGame');
-			return '/projects/memoryGame/index.html'
+			return 'projects/memoryGame/index.html'
 		}
 	});
 
@@ -59,15 +59,19 @@ portfolio.config(function($routeProvider) {
 		controller: 'portfolioController',
 		templateUrl: function($routeParams) {
 			console.log('routing to googleMaps');
-			return '/projects/googleMaps/'
+			return 'projects/googleMaps/'
 		}
 	});
 
 	$routeProvider.when('/contact', {
 		controller: 'contactController',
-		templateUrl: function($routeProvider) {
+		templateUrl: function($routeParams) {
 			console.log('routing to contact form');
-			return '/pages/contactForm'
+			return 'pages/contactView.html'
 		}
 	});
-})
+
+	$routeProvider.otherwise({
+        redirectTo: '/'
+    });
+});
