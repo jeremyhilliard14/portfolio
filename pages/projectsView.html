@@ -1,48 +1,104 @@
-<div id="project-container" class="container fluid">
-			<div id="projects" class="col-sm-12">
-				<div class="row cs-style-3">
-					<div id="myGrub" class="col-sm-4 projects thumbnail">
-						<div class="col-sm-12 app-info text-center">
-								<a href="#"><h3>MyGrub</h3></a>
-								<span>Front End Project using HTML5, CSS3, JavaScript, Jquery, and Angular.</span>
-						</div>
-					</div>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
 
-					<div id="interactive-map" class="col-sm-4 projects thumbnail">
-						<div class="col-sm-12 app-info text-center">
-								<a href="#"><h3>Interactive Map</h3></a>
-								<p>App that shows the delegate count by state allowing you to click on the state to update the total count.</p>
-						</div>
-					</div>
-					
-					<div id="memory-game" class="col-sm-4 projects thumbnail">
-						<div class="col-sm-12 app-info text-center">
-							<a href="#"><h3>Memory Game</h3></a>
-							<p>App built using javascrip and css animations.</p>
-						</div>
-					</div>
-				</div>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script type="text/javascript" src="../js/angular-route.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="../plugins/jquery.backstretch.min.js"></script>
+	<script src="../node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+	<script type="text/javascript" src="../plugins/Counter-Up/jquery.counterup.min.js"></script>
+	<script src="../plugins/jquery.easing.min.js"></script>
+	<script type="text/javascript" src="../js/portfolioController.js"></script>
+	<script type="text/javascript" src="../js/contactController.js"></script>
 
-				<div class="row cs-style-3">
-					<div id="google-maps" class="col-sm-4 projects thumbnail">
-						<div class="col-sm-12 app-info text-center">
-							<a href="#"><h3>Google Maps</h3></a>
-							<p>App built using Google API.</p>
-						</div>
-					</div>
-					<div id="countdown" class="col-sm-4 projects thumbnail">
-						<div class="col-sm-12 app-info text-center">
-							<a href="#"><h3>Countdown</h3></a>
-							<p>App built using javascrip showing countdown until the Tennessee/Virginia Tech football game.</p>
-						</div>
-					</div>
-					<div id="myVote" class="col-sm-4 projects thumbnail">
-						<div class="col-sm-12 app-info text-center">
-							<a href="#"><h3>Voting App</h3></a>
-							<p>his app is built on Express.js in node.js and uses Mongo DB..</p>
-						</div>
-					</div>
-				</div>
+</head>
+<body>
 
+<div id="portfolio-wrapper">
+	<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			    <span class="sr-only">Toggle navigation</span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    <span class="icon-bar"></span>
+			    </button>
+			    <a id="jgh" class="navbar-brand" href="../index.html">Jeremy Hilliard</a>
 			</div>
+
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+			    <ul class="nav navbar-nav">
+			        <li class="page-scroll"><a id="me" href="../index.html">About Me <span class="sr-only">(current)</span></a></li>
+			   	</ul>
+			     
+			    <ul class="nav navbar-nav navbar-right">
+			        <li><a id="tech" class="page-scroll" href="../index.html">Technologies</a></li>
+			        <li><a id="work" href="../index.html" class="page-scroll">Projects</a></li>
+			        <li><a id="connect" class="page-scroll" href="../index.html">Connect</a></li>
+			    </ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div id="project-container" class="container fluid">
+		<div id="projects" class="col-sm-12">
+			<div class="row cs-style-3">
+				<div id="myGrub" class="col-sm-4 projects thumbnail">
+					<div class="col-sm-12 app-info text-center">
+						<a href="#"><h3>MyGrub</h3></a>
+						<span>Front End Project using HTML5, CSS3, JavaScript, Jquery, and Angular. Also utilizes local storage to simulate registration and log in.  Inventory page allows users to add food item and favorite cuisines and then perform a recipe search based on those items.</span>
+					</div>
+				</div>
+
+				<div id="interactive-map" class="col-sm-4 projects thumbnail">
+					<div class="col-sm-12 app-info text-center">
+						<a href="#"><h3>Interactive Map</h3></a>
+						<p>App that shows the delegate count by state allowing you to click on the state to update the total count.</p>
+					</div>
+				</div>
+						
+				<div id="memory-game" class="col-sm-4 projects thumbnail">
+					<div class="col-sm-12 app-info text-center">
+						<a href="#"><h3>Memory Game</h3></a>
+						<p>App built using javascrip and css animations.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="row cs-style-3">
+				<div id="google-maps" class="col-sm-4 projects thumbnail">
+					<div class="col-sm-12 app-info text-center">
+						<a href="#"><h3>Google Maps</h3></a>
+						<p>App built using Google API.</p>
+					</div>
+				</div>
+				<div id="countdown" class="col-sm-4 projects thumbnail">
+					<div class="col-sm-12 app-info text-center">
+						<a href="#"><h3>Countdown</h3></a>
+						<p>App built using javascrip showing countdown until the Tennessee/Virginia Tech football game.</p>
+					</div>
+				</div>
+				<div id="myVote" class="col-sm-4 projects thumbnail">
+					<div class="col-sm-12 app-info text-center">
+						<a href="#"><h3>Voting App</h3></a>
+						<p>his app is built on Express.js in node.js and uses Mongo DB..</p>
+					</div>
+				</div>
+			</div>
+
 		</div>
+	</div>
+
+
+
+</body>
+</html>
