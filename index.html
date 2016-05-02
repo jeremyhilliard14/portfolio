@@ -213,32 +213,25 @@
 				<div class="col-sm-offset-2">
 					<div id="contact-form" class="col-sm-10 text-center">
 						<h2>Connect through email</h2>
-						<form role="form" method="post" action="index.html">
+						<form role="form" method="post" action="mail.php">
 							<div id="user-contact" class="col-sm-6">
 								<div class="form-group text-left">
 									<label for="name" class="control-label">Name</label>
-										<input type="text" class="form-control" id="name" name="name" placeholder="First anf Last Name" value="<?php echo htmlspecialchars($_POST['name']);?>">
-										<?php echo "<p class='text-danger'>$errName</p>";?>
+										<input type="text" class="form-control" id="name" name="name" placeholder="First and Last Name">
 								</div>
 								<div class="form-group text-left">
 									<label for="email" class="control-label">Email</label>
-										<input type="email" class="form-control" id="email" name="email"placeholder="johndoe@gmail.com" value="<?php echo htmlspecialchars($_POST['email']);?>">
-										<?php echo "<p class='text-danger'>$errEmail</p>";?>
+										<input type="email" class="form-control" id="email" name="email" placeholder="johndoe@gmail.com">
 								</div>
 							</div>
 							<div id="comments-area" class="col-sm-6">
 								<label for="message" class="control-label">Please write your message here</label>
-								<textarea id="write-here" class="form-control" name="message"rows="6" style="max-width: 100%"> <? echo htmlspecialchars($_POST['message']);?> </textarea>
-								<?php echo "<p class='text-danger'>$errMessage</p>";?>
+								<textarea id="write-here" class="form-control" name="message"rows="6" style="max-width: 100%"></textarea>
 							</div>
 							<div class="col-sm-12 form-group">
-								<input id="submit" name="submit" type="submit" value="send" class="btn btn-primary">
+								<input type="submit" value="Send" class="btn btn-primary"><input type="reset" value="Clear" class="btn btn-primary">
 							</div>
-							<div class="form-group">
-								<div class="col-sm-12">
-									<?php echo $result; ?>	
-								</div>
-							</div>
+				
 							<div id="other-contact" class="col-sm-12">
 								<h3>Other ways to connect:</h3>
 								<div id="linkedin" class="col-sm-6 text-right">
