@@ -213,33 +213,43 @@
 				<div class="col-sm-offset-2">
 					<div id="contact-form" class="col-sm-10 text-center">
 						<h2>Connect through email</h2>
-						<div id="user-contact" class="col-sm-6">
-							<div class="form-group text-left">
-								<label for="name">Name</label>
-									<input type="text" class="form-control" id="user-name" placeholder="Name">
+						<form role="form" method="post" action="index.html">
+							<div id="user-contact" class="col-sm-6">
+								<div class="form-group text-left">
+									<label for="name" class="control-label">Name</label>
+										<input type="text" class="form-control" id="name" name="name" placeholder="First anf Last Name" value="<?php echo htmlspecialchars($_POST['name']);?>">
+										<?php echo "<p class='text-danger'>$errName</p>";?>
+								</div>
+								<div class="form-group text-left">
+									<label for="email" class="control-label">Email</label>
+										<input type="email" class="form-control" id="email" name="email"placeholder="johndoe@gmail.com" value="<?php echo htmlspecialchars($_POST['email']);?>">
+										<?php echo "<p class='text-danger'>$errEmail</p>";?>
+								</div>
 							</div>
-							<div class="form-group text-left">
-								<label for="InputEmail">Email</label>
-									<input type="email" class="form-control" id="InputEmail" placeholder="johndoe@gmail.com">
+							<div id="comments-area" class="col-sm-6">
+								<label for="message" class="control-label">Please write your message here</label>
+								<textarea id="write-here" class="form-control" name="message"rows="6" style="max-width: 100%"> <? echo htmlspecialchars($_POST['message']);?> </textarea>
+								<?php echo "<p class='text-danger'>$errMessage</p>";?>
 							</div>
-						</div>
-						<div id="comments-area" class="col-sm-6">
-							<label for="textarea">Please write your message here</label>
-							<textarea id="write-here" class="form-control" rows="6" style="max-width: 100%"></textarea>
-						</div>
-						<div id="submit" class="col-sm-12">
-							<button type="submit" class="btn btn-default">Submit</button>
-						</div>
-						<div id="other-contact" class="col-sm-12">
-							<h3>Other ways to connect:</h3>
-							<div id="linkedin" class="col-sm-6 text-right">
-								<a href="https://www.linkedin.com/in/jeremy-hilliard-a9aa692b
-								"><img id="link-logo" src="css/photos/linkedin.png"></a>
+							<div class="col-sm-12 form-group">
+								<input id="submit" name="submit" type="submit" value="send" class="btn btn-primary">
 							</div>
-							<div id="github" class="col-sm-6 text-left">
-								<a href="https://github.com/jeremyhilliard14"><img id="github-logo" src="css/photos/GitHub-Mark.png"></a>
+							<div class="form-group">
+								<div class="col-sm-12">
+									<?php echo $result; ?>	
+								</div>
 							</div>
-						</div>
+							<div id="other-contact" class="col-sm-12">
+								<h3>Other ways to connect:</h3>
+								<div id="linkedin" class="col-sm-6 text-right">
+									<a href="https://www.linkedin.com/in/jeremy-hilliard-a9aa692b
+									"><img id="link-logo" src="css/photos/linkedin.png"></a>
+								</div>
+								<div id="github" class="col-sm-6 text-left">
+									<a href="https://github.com/jeremyhilliard14"><img id="github-logo" src="css/photos/GitHub-Mark.png"></a>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -269,7 +279,7 @@
 			</div>
 		</div>
 	</div> -->
-
+			
 
 	<script type="text/javascript">
 	
@@ -294,5 +304,7 @@
 
 
 	</script>
+		
+
 </body>
 </html>
