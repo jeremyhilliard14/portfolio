@@ -301,6 +301,7 @@ body{
 
 #portfolio-container{
 	margin-top: 250px;
+	margin-bottom: 250px;
 }
 
 #myCarousel{
@@ -330,7 +331,7 @@ body{
 }
 
 #intro {
-	margin-top: 250px;
+	margin-top: 175px;
 }
 
 #pic img{
@@ -374,7 +375,7 @@ body{
 	opacity: .9;
 	font-weight: 50;
 	height: 400px;
-	margin-top: 75px;
+	/* margin-top: 50px; */
 }
 #summary h2{
 	margin-top: 100px;
