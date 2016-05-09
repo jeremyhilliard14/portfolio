@@ -368,7 +368,11 @@ body{
 #jgh:hover, #me:hover, #tech:hover, #work:hover, #connect:hover{
 	background-color: #c4c4c4;
     color: black;
+}
 
+#me:visited{
+	background-color: #c4c4c4;
+    color: black;
 }
 
 #counter{
