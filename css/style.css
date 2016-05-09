@@ -239,7 +239,7 @@ body{
 }
 
 #project-container{
-	margin-top: 150px;
+	margin-top: 100px;
 
 }
 
@@ -254,7 +254,7 @@ body{
 
 #comment-container{
 	margin-top: 50px;
-	margin-bottom: 250px;
+	margin-bottom: 100px;
 }
 
 #contact-form{
@@ -385,7 +385,7 @@ body{
 	opacity: .9;
 	font-weight: 50;
 	/* height: 400px; */
-	margin-top: 100px;
+	/* margin-top: 50px; */
 	margin-bottom: 100px;
 }
 #summary h2{
