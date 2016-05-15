@@ -329,7 +329,7 @@ body{
 
 #skills img{
 	height: 50px;
-	max-width: 75%;
+	max-width: 50%;
 }
 
 #skills1 {
@@ -381,12 +381,19 @@ body{
 
 #summary{
 	background-color: white;
-	border-radius: 5px;
+	/* border-radius: 5px; */
 	opacity: .9;
 	font-weight: 50;
 	/* height: 400px; */
 	/* margin-top: 50px; */
 	margin-bottom: 100px;
+}
+#summary img{
+	margin-top: 25px;
+	width: 50%;
+	max-height: 250px;
+	border: 5px solid black;
+	margin-left: 25%;
 }
 #summary h2{
 	margin-top: 100px;
