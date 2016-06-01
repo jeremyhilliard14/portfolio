@@ -254,7 +254,7 @@ body{
 }
 
 #comment-container{
-	margin-top: 50px;
+	margin-top: 150px;
 	margin-bottom: 100px;
 }
 
@@ -288,7 +288,7 @@ body{
 }
 
 #skills-container{
-	margin-top: 150px;
+	margin-top: 125px;
 	margin-bottom: 150px;
 }
 
@@ -325,7 +325,6 @@ body{
 	background-color: white;
 	opacity: .9;
 	color: black;
-	margin-top: 150px;
 }
 
 #skills img{
@@ -373,7 +372,7 @@ body{
     color: black;
 }
 
-#me:visited{
+#me:visited, #jgh:visited, #tech:visited, #work:visited, #connect:visited{
 	background-color: #c4c4c4;
     color: black;
 }
