@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/style.css">	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 	<script type="text/javascript" src="js/angular-route.min.js"></script>
@@ -17,16 +17,16 @@
 	<script src="plugins/jquery.easing.min.js"></script>
 	<script type="text/javascript" src="js/portfolioController.js"></script>
 	<script type="text/javascript" src="js/contactController.js"></script>
-	
-	
-	
+
+
+
 
 
 
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" ng-controller="portfolioController">
-	
+
 	<div id="portfolio-wrapper">
 		<nav id="navbar" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container-fluid">
@@ -45,48 +45,34 @@
 			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
 			      <ul class="nav navbar-nav">
-			        <li class="page-scroll"><a id="me" href="JHilliardResume_050916.pdf" target="_blank">Resume<span class="sr-only">(current)</span></a></li>
-			   
-			
+			        <li class="page-scroll"><a id="me" href="JHilliardResume_082516.pdf" target="_blank">Resume<span class="sr-only">(current)</span></a></li>
+
+
 			      </ul>
-			     
+
 			      <ul class="nav navbar-nav navbar-right">
-			        <li><a id="tech" class="page-scroll" href="#/skills">Skills</a></li>
-			        <li><a id="work" href="#/projects" class="page-scroll">Projects</a></li>
-			        <li><a id="connect" class="page-scroll" href="#/contact">Connect</a></li>
+			        <li><a id="tech" class="page-scroll" href="#place-holder">Skills</a></li>
+			        <li><a id="work" href="pages/projectsView.html" class="page-scroll">Projects</a></li>
+			        <li><a id="connect" class="page-scroll" href="#comment-container">Connect</a></li>
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
 		</nav>
 
-		<div ng-view></div>
-		
-	<!-- 	<div id="intro" class="row">
-			<div id="intro-wrapper" class="col-sm-12"> 
-					<div id="summary" class="col-sm-12">						
+	 	<div id="intro" class="row">
+			<div id="intro-wrapper" class="col-sm-12">
+					<div id="summary" class="col-sm-12">
 						<div id="summary-text" class="col-sm-5 col-sm-offset-6 text-center">
-							<p class="text-justify">Full-stack web developer with 12+ years of supply chain management and operations experience seeking full-time or contract opportunities to utilize HTML, CSS, JavaScript and the MEAN stack.</p> -->
-							<!-- <div id="commits" class="col-sm-4 text-center">
-								<h4>Commits since Feb:</h4>
-								<p><span class="counter">300</span></p>
-							</div>
-
-							<div id="something" class="col-sm-4 text-center">
-								<h4>Technologies learned:</h4>
-								<p><span class="counter">20</span></p>
-							</div>
-
-							<div id="numProjects" class="col-sm-4 text-center">
-								<h4>Projects built:</h4>
-								<p><span class="counter">15</span></p>
-							</div> -->
-	<!-- 					 </div> 
-					</div> 
+							<p class="text-justify">Full-stack web developer with 12+ years of supply chain management and operations experience seeking full-time or contract opportunities to utilize HTML, CSS, JavaScript and the MEAN stack.</p>
+					 </div>
+					</div>
 			</div>
-		</div> -->	
+		</div>
 
+		<div id="place-holder" class="col-sm-12">
 
-		<!-- <div id="skills-container" class="row">
+		</div>
+		<div id="skills-container" class="row">
 			<div id="skills" class="col-sm-12 text-center">
 				<div id="skill-header" class="col-sm-12"><h1>Technologies</h1></div>
 				<div id="skills1" class="col-sm-3">
@@ -167,19 +153,19 @@
 			</div>
 
 		</div>
- -->
-		<!-- <div id="portfolio-container" class="container">
-			<div class="row text-center"><h2><a href="pages/projectsView.html">Projects</a></h2>
+
+	<div id="portfolio-container" class="container">
+			<a href="pages/projectsView.html"><div class="row text-center"><h2>Projects</h2>
 				<div id="carousel-title" class="col-sm-6 text-center"></div>
 					<div id="myCarousel" class="carousel slide col-sm-12" data-ride="carousel">
 						        <! Indicators -->
-						<!-- <ol class="carousel-indicators">
+						<ol class="carousel-indicators">
 						    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 						    <li data-target="#myCarousel" data-slide-to="1"></li>
 						</ol>
 
 						        <! Wrapper for slides -->
-		<!-- 				<div class="carousel-inner" role="listbox">
+					<div class="carousel-inner" role="listbox">
 						    <div class="item active">
 						        <div id="myGrub2" class="col-sm-4 span4 text-center" style="padding-left: 18px;">
 						            <img class="img-responsive" src="css/photos/ScreenShot12.png">
@@ -203,7 +189,7 @@
 						            <img class="img-responsive" src="css/photos/coffee.png">
 						        </div>
 						    </div>
-					
+
 						</div>
 
 						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -216,14 +202,14 @@
 						</a>
 					</div>
 				</div>
-			</div>
-		</div> -->
+			</div></a>
+		</div>
 
-<!-- 		<div id="comment-container" class="container">
+	<div id="comment-container" class="container">
 			<div class="row">
 				<div class="col-sm-offset-2">
 					<div id="contact-form" class="col-sm-10 text-center">
-						<h2>Connect through email</h2>
+						<h2>Let's Connect</h2>
 						<form role="form" method="post" action="mail.php">
 							<div id="user-contact" class="col-sm-6">
 								<div class="form-group text-left">
@@ -242,7 +228,7 @@
 							<div class="col-sm-12 form-group">
 								<input type="submit" value="Send" class="btn btn-primary"><input type="reset" value="Clear" class="btn btn-primary">
 							</div>
-				
+
 							<div id="other-contact" class="col-sm-12">
 								<h3>Other ways to connect:</h3>
 								<div id="linkedin" class="col-sm-6 text-right">
@@ -258,13 +244,13 @@
 				</div>
 			</div>
 
-		</div> -->
-	<!-- </div> -->
-		
-		
+		</div>
+	 </div>
 
-		
-		<!-- <div id="footer" class="col-sm-12">
+
+
+
+		 <!-- <div id="footer" class="col-sm-12">
 			<div id="left" class="col-sm-4 text-center">
 				<p><a href="#">JGH</a></p>
 			</div>
@@ -279,14 +265,14 @@
 				<div id="github-acct" class="col-sm-4 text-center">
 					<a href="https://github.com/jeremyhilliard14"><img id="github-logo" src="css/photos/GitHub-Mark.png"></a>
 				</div>
-				
+
 			</div>
 		</div>
-	</div> -->
-			
+	</div>  -->
+
 
 	<script type="text/javascript">
-	
+
 		$.backstretch("css/photos/jgh-hiking.jpg");
 
 		$(function() {
@@ -308,7 +294,7 @@
 
 
 	</script>
-		
+
 
 </body>
 </html>

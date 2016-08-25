@@ -245,7 +245,7 @@ body{
 }
 
 .projects{
-	
+
 	height: 300px;
 }
 
@@ -288,7 +288,7 @@ body{
 }
 
 #skills-container{
-	margin-top: 125px;
+	margin-top: 85px;
 	margin-bottom: 150px;
 }
 
@@ -349,7 +349,7 @@ body{
 #intro-wrapper{
 	min-height: 500px;
 	/*background-image: url('photos/jgh-banff.jpg');*/
-	background-size: 100% 100%; 
+	background-size: 100% 100%;
 	color: black;
 	font-size: 30px;
 	font-weight: 10px;
@@ -422,4 +422,7 @@ padding-left: 50px;
 
 #commits, #something, #numProjects{
 	margin-bottom: 75px;
+}
+#place-holder{
+
 }
