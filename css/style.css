@@ -210,6 +210,63 @@ body{
 	transition: transform 0.4s, opacity 0.1s;
 }
 
+#mantaray{
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	background-image: url('photos/mantaray.png');
+	background-size: 100% 100%;
+	margin-bottom: 15px;
+}
+
+#mantaray img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+	transition: transform 0.4s;
+}
+
+.cs-style-3 #mantaray:hover img,
+.cs-style-3 #mantaray.cs-hover img {
+	transform: translateY(-40px);
+}
+
+.cs-style-3 #mantaray:hover .app-info,
+.cs-style-3 #mantaray.cs-hover .app-info {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+#appy{
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	background-image: url('photos/appycamper.png');
+	background-size: 100% 100%;
+	margin-bottom: 15px;
+}
+
+#appy img {
+	max-width: 100%;
+	display: block;
+	position: relative;
+	transition: transform 0.4s;
+}
+
+.cs-style-3 #appy:hover img,
+.cs-style-3 #appy.cs-hover img {
+	transform: translateY(-40px);
+}
+
+.cs-style-3 #appy:hover .app-info,
+.cs-style-3 #appy.cs-hover .app-info {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: transform 0.4s, opacity 0.1s;
+}
+
+
 #html5, #css3, #bootstrap, #jquery, #angular, #js, #node, #express, #mongo, #github, #sass, #lss{
 	position: relative;
 	max-height: 200px;
